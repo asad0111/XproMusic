@@ -12,12 +12,12 @@ async def handwrite(_, message: Message):
         text = message.reply_to_message.text
     else:
         text =message.text.split(None, 1)[1]
-    m =await message.reply_text( "Please wait...,\n\n𝗕𝗬 ❣️✰ 𝕄ℝ 𝕏 𝔹ℝ𝕆𝕂𝔼ℕ  ✰😈...")
+    m =await message.reply_text( "Please wait...,\n\nWriting your text.....")
     write = requests.get(f"https://apis.xditya.me/write?text={text}").url
 
     caption = f"""
 sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
-✨ ᴡʀɪᴛᴛᴇɴ ʙʏ : [𝐘ᴜᴍɪᴋᴏᴏ](https://t.me/{BOT_USERNAME})
+✨ ᴡʀɪᴛᴛᴇɴ ʙʏ : [❣️✰ 𝕄ℝ 𝕏 𝔹ℝ𝕆𝕂𝔼ℕ  ✰😈](https://t.me/mrbrokn) 
 🥀 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}
 """
     await m.delete()

@@ -15,7 +15,7 @@ async def chat_gpt(bot, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "Example:\n\n/chatgpt Where is TajMahal?"
+                "Example:\n\nYumi Where is TajMahal?"
             )
         else:
             a = message.text.split(' ', 1)[1]

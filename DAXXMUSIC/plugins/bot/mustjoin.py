@@ -6,7 +6,7 @@ from DAXXMUSIC import app
 
 #--------------------------
 
-MUST_JOIN = "𝗕𝗥𝗢𝗞𝗘𝗡 𝗫 𝗡𝗘𝗧𝗪𝗢𝗥𝗞"
+MUST_JOIN = "BROKENXNETWORK"
 #------------------------
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(app: Client, msg: Message):

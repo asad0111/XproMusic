@@ -68,7 +68,7 @@ GIT_TOKEN = getenv(
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/brokenxnetwork")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+b3FFOs5s3uYyMTll")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+u6mIC9k6FhozYTM9")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
@@ -141,13 +141,13 @@ confirmer = {}
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
 START_IMG_URL = getenv(
-    "START_VIDEO_URL", "https://graph.org/file/d0c6eb2799b1d7b67ab88.mp4"
+    "START_IMG_URL", "https://graph.org/file/799b5e10a642a0c018643.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_VIDEO_URL", "https://graph.org/file/d0c6eb2799b1d7b67ab88.mp4"
+    "PING_IMG_URL", "https://graph.org/file/799b5e10a642a0c018643.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/d30d11c4365c025c25e3e.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/22929baacd6f08f0dc08b.jpg"
 TELEGRAM_AUDIO_URL = "https://telegra.ph/file/48f39202823b358203234.jpg"
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/e575ae40d6635250974e1.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/03efec694e41e891b29dc.jpg"

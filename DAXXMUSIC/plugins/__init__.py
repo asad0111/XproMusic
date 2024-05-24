@@ -1,50 +1,19 @@
-import asyncio
-import logging
-import time
-from importlib import import_module
-from os import listdir, path
-from dotenv import load_dotenv
-from pyrogram import Client
-from config import API_ID, API_HASH, BOT_TOKEN, BOT_USERNAME, OWNER_ID, GPT_API, LOGGER_ID, DEEP_API
-
-from SafoneAPI import SafoneAPI
-
-safone = SafoneAPI()
+import glob
+from os.path import dirname, isfile
 
 
-loop = asyncio.get_event_loop()
+def __list_all_modules():
+    work_dir = dirname(__file__)
+    mod_paths = glob.glob(work_dir + "/*/*.py")
 
-logging.basicConfig(
-    format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s",
-    level=logging.INFO,
-)
+    all_modules = [
+        (((f.replace(work_dir, "")).replace("/", "."))[:-3])
+        for f in mod_paths
+        if isfile(f) and f.endswith(".py") and not f.endswith("__init__.py")
+    ]
 
-
-
-app = Client(
-    ":MRBROKNBOT:",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN,
-)
+    return all_modules
 
 
-
-
-
-
-
-
-async def info_bot():
-    global BOT_ID, BOT_NAME, BOT_USERNAME
-    await app.start()
-    getme = await app.get_me()
-    BOT_ID = getme.id
-    BOT_USERNAME = getme.username
-    if getme.last_name:
-        BOT_NAME = getme.first_name + " " + getme.last_name
-    else:
-        BOT_NAME = getme.first_name
-
-
-loop.run_until_complete(info_bot())
+ALL_MODULES = sorted(__list_all_modules())
+__all__ = ALL_MODULES + ["ALL_MODULES"]

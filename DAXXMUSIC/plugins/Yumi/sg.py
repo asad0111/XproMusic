@@ -8,7 +8,7 @@ from pyrogram.raw.functions.messages import DeleteHistory
 from DAXXMUSIC import userbot as us, app
 from DAXXMUSIC.core.userbot import assistants
 
-@app.on_message(filters.command("sg", "who"))
+@app.on_message(filters.command("sg"))
 async def sg(client: Client, message: Message):
     if len(message.text.split()) < 1 and not message.reply_to_message:
         return await message.reply("sg username/id/reply")
@@ -38,7 +38,7 @@ async def sg(client: Client, message: Message):
         if stalk.text == None:
             continue
         if not stalk:
-            await message.reply("hcr")
+            await message.reply("botnya ngambek")
         elif stalk:
             await message.reply(f"{stalk.text}")
             break  # Exit the loop after displaying one message
@@ -50,3 +50,4 @@ async def sg(client: Client, message: Message):
         pass
     
     await lol.delete()
+    

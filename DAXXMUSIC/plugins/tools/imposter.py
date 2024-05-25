@@ -115,7 +115,7 @@ async def chk_usr(_, message: Message):
         await message.reply_photo(random.choice(MISHI), caption=msg, reply_markup=InlineKeyboardMarkup(ROY),)
 
 
-@app.on_message(filters.group & filters.command("imposter") & ~filters.bot & ~filters.via_bot)
+@app.on_message(filters.group & filters.command("pretender") & ~filters.bot & ~filters.via_bot)
 async def set_mataa(_, message: Message):
     if len(message.command) == 1:
         return await message.reply("**ᴅᴇᴛᴇᴄᴛ ᴘʀᴇᴛᴇɴᴅᴇʀ ᴜsᴇʀs ᴜsᴀɢᴇ : ᴘʀᴇᴛᴇɴᴅᴇʀ ᴏɴ|ᴏғғ**")

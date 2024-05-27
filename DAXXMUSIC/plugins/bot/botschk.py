@@ -45,7 +45,7 @@ async def bots_chk(_, message):
                 else:
                     response += f"╭⎋ [{bot.first_name}](tg://user?id={bot.id})\n╰⊚ **sᴛᴀᴛᴜs: ᴏғғʟɪɴᴇ ❄**\n\n"
         except Exception:
-            response += f"╭⎋ {bot_username}\n╰⊚ **sᴛᴀᴛᴜs:  ᴀʟɪᴠᴇ 🥰**\n"
+            response += f"╭⎋ {bot_username}\n╰⊚ **sᴛᴀᴛᴜs: ᴀʟɪᴠᴇ 🥰**\n"
     
     await msg.edit_text(response)
                 

@@ -18,7 +18,7 @@ OWNER_USERNAME = getenv("OWNER_USERNAME","mrbrokn")
 # --------------------------------------------------------
 BOT_USERNAME = getenv("BOT_USERNAME" , "mrbroknBot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "‣ Mɪss Yᴜᴍɪ Pʀᴏ⋆")
+BOT_NAME = getenv("BOT_NAME" , "‣ Mɪss Yᴜᴍɪ Pʀᴏ⋆ ᴠ𝟸.𝟶")
 # ---------------------------------------------------------
 ASSUSERNAME = getenv("ASSUSERNAME" , "MrBrokenx")
 # ---------------------------------------------------------

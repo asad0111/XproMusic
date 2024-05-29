@@ -127,9 +127,9 @@ def welcomepic(pic, user, chatname, id, uname, brightness_factor=1.3):
     return f"downloads/welcome#{id}.png"
 
 
-@app.on_message(filters.command("welcome") & ~filters.private)
+@app.on_message(filters.command("wlcm") & ~filters.private)
 async def auto_state(_, message):
-    usage = "**ᴜsᴀɢᴇ:**\n**⦿ /welcome [on|off]**"
+    usage = "**ᴜsᴀɢᴇ:**\n**⦿ /wlcm [on|off]**"
     if len(message.command) == 1:
         return await message.reply_text(usage)
     chat_id = message.chat.id
@@ -215,7 +215,7 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             LOGGER.error(e)
 
 
-@app.on_message(filters.command("gadd") & filters.user(6664582540))
+@app.on_message(filters.command("gadd") & filters.user(1841914911))
 async def add_all(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:

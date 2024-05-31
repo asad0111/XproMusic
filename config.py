@@ -9,12 +9,12 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("20104370"))
-API_HASH = getenv("1ee68fa02aa69ec187bb2854d19bca9c")
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 # ------------------------------------------------------
-BOT_TOKEN = getenv("6855598064:AAE3zll8DfpKYSghV-VGUTLbtnobtrOKW1M")
+BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","mrbrokn")
+OWNER_USERNAME = getenv("OWNER_USERNAME","Aboutbrokenx")
 # --------------------------------------------------------
 BOT_USERNAME = getenv("BOT_USERNAME" , "Miss_YumiPro_Bot")
 # --------------------------------------------------------
@@ -68,7 +68,7 @@ GIT_TOKEN = getenv(
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/brokenxnetwork")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+u6mIC9k6FhozYTM9")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+aoOVBUmAwW9iY2U9")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 

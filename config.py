@@ -26,8 +26,8 @@ ASSUSERNAME = getenv("ASSUSERNAME" , "Assis_yumi")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://asadinloveas:asadinloveas@cluster0.afg8tut.mongodb.net/?retryWrites=true&w=majority
-")
+MONGO_DB_URI = getenv("MONGO_DB_URI", mongodb+srv://asadinloveas:asadinloveas@cluster0.afg8tut.mongodb.net/?retryWrites=true&w=majority
+)
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 

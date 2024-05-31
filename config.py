@@ -9,10 +9,10 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("20104370"))
+API_HASH = getenv("1ee68fa02aa69ec187bb2854d19bca9c")
 # ------------------------------------------------------
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("6855598064:AAE3zll8DfpKYSghV-VGUTLbtnobtrOKW1M")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","mrbrokn")
 # --------------------------------------------------------
@@ -26,7 +26,8 @@ ASSUSERNAME = getenv("ASSUSERNAME" , "Assis_yumi")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://asadinloveas:asadinloveas@cluster0.afg8tut.mongodb.net/?retryWrites=true&w=majority
+")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 

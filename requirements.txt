@@ -1,5 +1,5 @@
 aiofiles
-aiohttp==3.9.5
+aiohttp==3.10.1
 apscheduler
 asyncio
 bard
